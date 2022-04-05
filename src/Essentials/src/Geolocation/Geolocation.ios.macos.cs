@@ -75,7 +75,7 @@ namespace Microsoft.Maui.Devices.Sensors
 
 			var clLocation = await tcs.Task;
 
-			return clLocation?.ToLocation();
+			return clLocation?.ToLocation(reducedAccuracy);
 
 			void HandleLocation(CLLocation location)
 			{
